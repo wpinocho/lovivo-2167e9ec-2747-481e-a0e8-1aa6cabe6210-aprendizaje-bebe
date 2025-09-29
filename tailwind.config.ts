@@ -61,6 +61,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Colores especializados para la tienda de bebés
+				baby: {
+					blue: 'hsl(210, 100%, 85%)',
+					mint: 'hsl(160, 50%, 80%)',
+					peach: 'hsl(25, 100%, 85%)',
+					lavender: 'hsl(260, 50%, 85%)',
+					yellow: 'hsl(50, 100%, 80%)'
 				}
 			},
 			borderRadius: {
@@ -84,11 +92,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'gentle-bounce': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-5px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'gentle-bounce': 'gentle-bounce 2s ease-in-out infinite'
 			}
 		}
 	},
